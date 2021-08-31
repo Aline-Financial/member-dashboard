@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "sonar": "node sonar-project.js",
     "test": "ng test",
-    "test-headless": "ng test --nowatch --browsers ChromeHeadless",
-    "test-coverage": "ng test --nowatch --browsers ChromeHeadless --code-coverage"
+    "test:headless": "ng test --nowatch --browsers ChromeHeadless",
+    "test:coverage": "ng test --nowatch --browsers ChromeHeadless --code-coverage"
   },
   "private": true,
   "dependencies": {
