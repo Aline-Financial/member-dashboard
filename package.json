@@ -28,6 +28,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@ng-bootstrap/ng-bootstrap": "^11.0.0-beta.2",
+    "@stomp/ng2-stompjs": "^8.0.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.0.2",
     "font-awesome": "^4.7.0",

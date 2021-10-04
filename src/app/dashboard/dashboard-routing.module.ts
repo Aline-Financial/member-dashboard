@@ -7,6 +7,7 @@ import {AuthGuard} from '@core/guards/auth.guard';
 import {NotFoundComponent} from '@app/not-found/not-found.component';
 import {AccountPageComponent} from '@dashboard/account-page/account-page.component';
 import {DashboardRoutingService} from '@dashboard/dashboard-routing.service';
+import {ChatComponent} from '@chat/chat.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,10 @@ const routes: Routes = [
         data: {
           animationState: 'summaryPage'
         }
+      },
+      {
+        path: 'chat',
+        component: ChatComponent
       },
       {
         path: 'accounts',

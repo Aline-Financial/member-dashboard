@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="overflow-scroll h-75">
+    <ul>
+      <li *ngFor="let message of messages">{{message.sender.username}} - {{message.message}} - {{message.sent | date: 'hh:mm'}}</li>
+    </ul>
+  </div>
+  <form (submit)="sendMessage()">
+    <div class="input-group">
+      <input [(ngModel)]="messageText" name="messageText" type="tex
+      t" placeholder="Message" class="form-control"/>
+      <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+  </form>
+</div>

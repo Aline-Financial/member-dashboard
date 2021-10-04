@@ -25,6 +25,7 @@
       "@app/*": ["src/app/*"],
       "@core/*": ["src/app/core/*"],
       "@dashboard/*": ["src/app/dashboard/*"],
+      "@chat/*": ["src/app/chat/*"],
       "@login/*": ["src/app/login/*"],
       "@registration/*": ["src/app/registration/*"],
       "@error-handler/*": ["src/app/error-handler/*"],

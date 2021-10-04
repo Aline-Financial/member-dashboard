@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   application: {
     api: 'http://localhost:8080/api',
+    messageBroker: 'ws://localhost:8074/ws',
     landingPortal: 'http://localhost:3007'
   }
 };
