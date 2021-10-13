@@ -8,6 +8,9 @@ import {NotFoundComponent} from '@app/not-found/not-found.component';
 import {AccountPageComponent} from '@dashboard/account-page/account-page.component';
 import {DashboardRoutingService} from '@dashboard/dashboard-routing.service';
 import {TransferFundsPageComponent} from '@dashboard/transfer-funds-page/transfer-funds-page.component';
+import {ProfileComponent} from './profile/profile.component';
+import {AvatarUploadComponent} from './profile/avatar-upload/avatar-upload.component';
+import {ProfileUpdateComponent} from './profile/profile-update/profile-update.component';
 
 const routes: Routes = [
   {
@@ -44,6 +47,18 @@ const routes: Routes = [
       {
         path: 'transfer-funds',
         component: TransferFundsPageComponent
+      },
+      {
+        path: 'profile',
+        component: ProfileComponent
+      },
+      {
+        path:'profile-avatar',
+        component: AvatarUploadComponent
+      },
+      {
+        path:'profile-update',
+        component: ProfileUpdateComponent
       },
       {
         path: '**',

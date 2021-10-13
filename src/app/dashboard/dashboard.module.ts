@@ -20,7 +20,7 @@ import {TransactionAmountPipe} from './pipes/transaction-amount.pipe';
 import {TransactionEnumPipe} from './pipes/transaction-enum.pipe';
 import {TransactionDescriptionPipe} from './pipes/transaction-description.pipe';
 import {SortToggleComponent} from './transactions-view/sort-toggle/sort-toggle.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {TransactionRowComponent} from './transactions-view/transaction-row/transaction-row.component';
 import {TransactionsTableComponent} from './transactions-view/transactions-table/transactions-table.component';
 import {SearchTransactionsComponent} from './transactions-view/search-transactions/search-transactions.component';
@@ -29,6 +29,10 @@ import {AppMaskModule} from '@app/app-mask.module';
 import {AppCurrencyMaskModule} from '@app/app-currency-mask.module';
 import {TransferFundsPageComponent} from './transfer-funds-page/transfer-funds-page.component';
 import {BreakpointDetectorComponent} from '@dashboard/breakpoint-detector/breakpoint-detector.component';
+import {AvatarUploadComponent} from './profile/avatar-upload/avatar-upload.component';
+import {ProfileUpdateComponent} from './profile/profile-update/profile-update.component';
+import {ProfileComponent} from './profile/profile.component';
+import {ImageCropperModule} from 'ngx-image-cropper';
 
 @NgModule({
   declarations: [
@@ -53,7 +57,10 @@ import {BreakpointDetectorComponent} from '@dashboard/breakpoint-detector/breakp
     SearchTransactionsComponent,
     TransferFundsViewComponent,
     TransferFundsPageComponent,
-    BreakpointDetectorComponent
+    BreakpointDetectorComponent,
+    ProfileComponent,
+    AvatarUploadComponent,
+    ProfileUpdateComponent
   ],
   imports: [
     CommonModule,
@@ -65,7 +72,10 @@ import {BreakpointDetectorComponent} from '@dashboard/breakpoint-detector/breakp
     NgbButtonsModule,
     FormsModule,
     AppMaskModule,
-    AppCurrencyMaskModule
+    AppCurrencyMaskModule,
+    ImageCropperModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class DashboardModule {}

@@ -1,0 +1,137 @@
+<ng-template #templateUpdateForm [ngIf]=true>
+  <div class="registration-content animate__animated animate__fadeSlideInLeft">
+    <div class="container p-5">
+
+      <form [formGroup]="updateForm" (ngSubmit)="updateProfile()" *ngIf="updateForm">
+        <div *ngIf="state==='contact'">
+          <h1 class="display-4 my-3"><span class="text-primary">Update</span> your contact information</h1>
+          <div class="w-100 pb-3">
+            <hr class="line-divider" />
+          </div>
+          <div class="container">
+            <div class="row row-cols-1">
+              <div class="col my-2">
+                <div class="form-floating position-relative w-100">
+                  <input type="text" id="email" formControlName="email" class="form-control" placeholder="Email" />
+                  <label class="form-label" for="email">Email</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row row-cols-1">
+              <div class="col my-2">
+                <div class="form-floating position-relative w-100">
+                  <input type="text" id="phone" formControlName="phone" class="form-control" placeholder="Phone" />
+                  <label class="form-label" for="phone">Phone</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="state==='mailing'">
+          <h1 class="display-4 my-3"><span class="text-primary">Update</span> your mailing information</h1>
+          <div class="w-100 pb-3">
+            <hr class="line-divider" />
+          </div>
+          <div class="container">
+            <div class="row row-cols-1">
+              <div class="col my-2">
+                <div class="form-floating position-relative w-100">
+                  <input type="text" id="mailingAddress" formControlName="mailingAddress" class="form-control"
+                    placeholder="MailingAddress" />
+                  <label class="form-label" for="mailingAddress">Mailing Address</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row row-cols-1">
+              <div class="col my-2">
+                <div class="form-floating position-relative w-100">
+                  <input type="text" id="mailingCity" formControlName="mailingCity" class="form-control"
+                    placeholder="MailingCity" />
+                  <label class="form-label" for="mailingCity">City</label>
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-1">
+              <div class="col my-2">
+                <div class="form-floating position-relative w-100">
+                  <input type="text" id="mailingState" formControlName="mailingState" class="form-control"
+                    placeholder="MailingState" />
+                  <label class="form-label" for="mailingState">State</label>
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-1">
+              <div class="col my-2">
+                <div class="form-floating position-relative w-100">
+                  <input type="text" id="mailingZipcode" formControlName="mailingZipcode" class="form-control"
+                    placeholder="MailingZipcode" />
+                  <label class="form-label" for="mailingZipcode">Zipcode</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="state==='billing'">
+          <h1 class="display-4 my-3"><span class="text-primary">Update</span> your billing information</h1>
+          <div class="w-100 pb-3">
+            <hr class="line-divider" />
+          </div>
+          <div class="container">
+            <div class="row row-cols-1">
+              <div class="col my-2">
+                <div class="form-floating position-relative w-100">
+                  <input type="text" id="address" formControlName="address" class="form-control"
+                    placeholder="Address" />
+                  <label class="form-label" for="address">Billing Address</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row row-cols-1">
+              <div class="col my-2">
+                <div class="form-floating position-relative w-100">
+                  <input type="text" id="city" formControlName="city" class="form-control" placeholder="City" />
+                  <label class="form-label" for="city">City</label>
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-1">
+              <div class="col my-2">
+                <div class="form-floating position-relative w-100">
+                  <input type="text" id="state" formControlName="state" class="form-control" placeholder="State" />
+                  <label class="form-label" for="state">State</label>
+                </div>
+              </div>
+            </div>
+            <div class="row row-cols-1">
+              <div class="col my-2">
+                <div class="form-floating position-relative w-100">
+                  <input type="text" id="zipcode" formControlName="zipcode" class="form-control"
+                    placeholder="Zipcode" />
+                  <label class="form-label" for="zipcode">Zipcode</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-2 mt-5">
+          <div class="col text-center my-2 order-1">
+            <button type="submit" class="btn btn-lg btn-outline-primary rounded-pill">
+              <span class="d-flex flex-row align-items-center">
+                Submit <span *ngIf="registrationLoading"
+                  class="ms-1 d-inline-block spinner-grow spinner-grow-sm"></span>
+              </span>
+            </button>
+          </div>
+          <div class="col text-center my-2 order-0">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</ng-template>
