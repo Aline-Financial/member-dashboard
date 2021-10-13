@@ -1,11 +1,7 @@
-<!-- <img [src]="url ? url : '../../assets/images/avatar.jpg'" ng-cropper ng-cropper-options="options"
-    ng-cropper-show="'show.cropper'" ng-cropper-hide="'hide.cropper'"> <br />
-<input type='file' (change)="onSelectFile($event)"> -->
-
 <input type="file" (change)="fileChangeEvent($event)" />
 
-<image-cropper [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true" [aspectRatio]="1 / 1" format="png" [resizeToWidth]="200"
-    (imageCropped)="imageCropped($event)" (cropperReady)="cropperReady()" (loadImageFailed)="loadImageFailed()">
+<image-cropper [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true" [aspectRatio]="1 / 1" format="png"
+    [resizeToWidth]="200" (imageCropped)="imageCropped($event)">
 </image-cropper>
 
 <div class="col">
@@ -13,6 +9,7 @@
         <img [src]="croppedImage" />
     </div>
     <div class="d-flex justify-content-center">
-        <button (click)="onSubmit()" type="button" class="btn btn-primary fs-3 rounded-pill py-2 px-4" routerLink="../profile">Select Image</button>
+        <button (click)="onSubmit()" type="button" class="btn btn-primary fs-3 rounded-pill py-2 px-4"
+            routerLink="../profile">Select Image</button>
     </div>
 </div>

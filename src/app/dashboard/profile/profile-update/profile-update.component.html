@@ -3,6 +3,34 @@
     <div class="container p-5">
 
       <form [formGroup]="updateForm" (ngSubmit)="updateProfile()" *ngIf="updateForm">
+        <div *ngIf="state==='name'">
+          <h1 class="display-4 my-3"><span class="text-primary">Update</span> your user information</h1>
+          <div class="w-100 pb-3">
+            <hr class="line-divider" />
+          </div>
+          <div class="container">
+            <div class="row row-cols-1">
+              <div class="col my-2">
+                <div class="form-floating position-relative w-100">
+                  <input type="text" id="lastName" formControlName="lastName" class="form-control"
+                    placeholder="LastName" />
+                  <label class="form-label" for="lastName">Last Name</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row row-cols-1">
+              <div class="col my-2">
+                <div class="form-floating position-relative w-100">
+                  <input type="text" id="username" formControlName="username" class="form-control"
+                    placeholder="Username" />
+                  <label class="form-label" for="username">Username</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div *ngIf="state==='contact'">
           <h1 class="display-4 my-3"><span class="text-primary">Update</span> your contact information</h1>
           <div class="w-100 pb-3">

@@ -53,11 +53,11 @@ const routes: Routes = [
         component: ProfileComponent
       },
       {
-        path:'profile-avatar',
+        path: 'profile-avatar',
         component: AvatarUploadComponent
       },
       {
-        path:'profile-update',
+        path: 'profile-update',
         component: ProfileUpdateComponent
       },
       {

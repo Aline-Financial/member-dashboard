@@ -29,11 +29,13 @@ import {
   faUserCheck,
   faUserCircle,
   faUserPlus,
-  faWallet
+  faWallet,
+  faPencilAlt
 } from '@fortawesome/free-solid-svg-icons';
 import {faCircle as regCircle} from '@fortawesome/free-regular-svg-icons';
 
 const icons: IconDefinition[] = [
+  faPencilAlt,
   faAngleRight,
   faUserCheck,
   faUserPlus,
